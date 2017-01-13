@@ -1,0 +1,51 @@
+<resources>
+    <declare-styleable name="ArcPageIndicator">
+        <attr name="apiViewPager" format="reference"/>
+
+        <attr name="apiSpotsColor" format="reference|color"/>
+        <attr name="apiSelectedSpotColor" format="reference|color"/>
+        <attr name="apiSpotsRadius" format="dimension"/>
+
+        <attr name="apiSpotShape">
+            <enum name="circle" value="0"/>
+            <enum name="roundedSquare" value="1"/>
+            <enum name="square" value="2"/>
+        </attr>
+
+        <attr name="apiIntervalMeasure">
+            <enum name="angle" value="0"/>
+            <enum name="length" value="1"/>
+        </attr>
+        <attr name="apiArcOrientation">
+            <enum name="toUp" value="0"/>
+            <enum name="toDown" value="1"/>
+            <enum name="toRight" value="2"/>
+            <enum name="toLeft" value="3"/>
+            <enum name="toUpRight" value="4"/>
+            <enum name="toUpLeft" value="5"/>
+            <enum name="toDownRight" value="6"/>
+            <enum name="toDownLeft" value="7"/>
+        </attr>
+        <attr name="apiInvertDirection" format="boolean"/>
+
+        <attr name="apiAnimationType">
+            <enum name="none" value="0"/>           <!-- no animation -->
+            <enum name="color" value="1"/>          <!-- fade one color into the other -->
+            <enum name="slide" value="2"/>          <!-- move a selector over the spots -->
+            <enum name="pinch" value="3"/>          <!-- move a selector over the spots while it is pinched -->
+            <enum name="bump" value="4"/>           <!-- move a selector over the spots while it is bumping -->
+            <enum name="rotate" value="5"/>         <!-- rotate all the spots -->
+            <enum name="rotate_pinch" value="6"/>   <!-- rotate all the spots and pinch those that are not selected -->
+            <enum name="necklace" value="7"/>       <!-- rotate all the spots and reduce the size of those that are periferical -->
+            <enum name="necklace2" value="8"/>      <!-- rotate all the spots and reduce the size of those that are far away from the selected one -->
+            <enum name="cover" value="9"/>          <!-- show a filled selector over filled spots that grows and shrinks -->
+            <enum name="fill" value="10"/>           <!-- show a filled selector over outlined spots that grows and shrinks -->
+            <enum name="surround" value="11"/>      <!-- move an outlined selector over the spots -->
+        </attr>
+
+        <attr name="apiHandEnabled" format="boolean"/>
+        <attr name="apiHandColor" format="reference|color"/>
+        <attr name="apiHandWidth" format="dimension"/>
+        <attr name="apiHandRelativeLength" format="float"/>
+    </declare-styleable>
+</resources>

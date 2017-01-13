@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="it.beppi.arcpageindicator_sample.SampleActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/page_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#113366"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 1"
+            />
+
+        <TextView
+            android:id="@+id/page_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#116633"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 2"
+            />
+
+        <TextView
+            android:id="@+id/page_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#661133"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 3"
+            />
+
+        <TextView
+            android:id="@+id/page_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#663311"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 4"
+            />
+
+        <TextView
+            android:id="@+id/page_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#336611"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 5"
+            />
+
+        <TextView
+            android:id="@+id/page_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#331166"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 6"
+            />
+
+        <TextView
+            android:id="@+id/page_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#111133"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 7"
+            />
+
+        <TextView
+            android:id="@+id/page_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#113311"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 8"
+            />
+
+        <TextView
+            android:id="@+id/page_9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#331111"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 9"
+            />
+
+        <TextView
+            android:id="@+id/page_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#113333"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 10"
+            />
+
+        <TextView
+            android:id="@+id/page_11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#331133"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 11"
+            />
+
+        <TextView
+            android:id="@+id/page_12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333311"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Page 12"
+            />
+
+
+
+    </android.support.v4.view.ViewPager>
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:id="@+id/arc_pi_1"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toUp"
+        app:apiSpotsRadius="12dp"
+        app:apiAnimationType="necklace"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:id="@+id/arc_pi_2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:apiSpotsRadius="5dp"
+        app:apiAnimationType="necklace2"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toDownRight"
+        />
+
+
+
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="35dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toRight"
+        app:apiAnimationType="bump"
+        app:apiSpotShape="roundedSquare"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toDown"
+        app:apiAnimationType="cover"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toLeft"
+        app:apiAnimationType="rotate_pinch"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toUpRight"
+        app:apiSpotsRadius="7dp"
+        app:apiSpotsColor="@color/colorPrimary"
+        app:apiSelectedSpotColor="@color/colorAccent"
+        app:apiAnimationType="slide"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toUpLeft"
+        app:apiSpotsRadius="2dp"
+        />
+
+    <it.beppi.arcpageindicator.ArcPageIndicator
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:apiViewPager="@id/view_pager"
+        app:apiArcOrientation="toDownLeft"
+        app:apiHandEnabled="true"
+        app:apiSpotsRadius="2dp"
+        />
+
+</RelativeLayout>
