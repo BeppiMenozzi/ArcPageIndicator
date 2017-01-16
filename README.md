@@ -9,6 +9,7 @@ A fully customizable super-easy Page Indicator, with stunning animations and ori
 * Out-of-the-box working indicator
 * Fully customizable and styleable
 * Can be programmatically controlled
+* Includes rather complex ellipses calculations :-)
 
 ### Setup (Gradle)
 In your project's build.gradle file:
