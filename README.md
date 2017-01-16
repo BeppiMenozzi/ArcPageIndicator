@@ -77,6 +77,8 @@ List of attributes with description:
 <table>
 <tr><th colspan="2">General</th></tr>
 <tr><td><b>apiViewPager</b></td><td>The ViewPager associated to the Indicator</td></tr>
+<tr><th colspan="2">Arc appearance</th></tr>
+<tr><td><b>apiArcOrientation</b></td><td>Orientation of the "belly" of the arc. This parameter also affects if the arc will be 90° (corner arc) or 180° (edge arc)</td></tr>
 <tr><th colspan="2">Spot appearance</th></tr>
 <tr><td><b>apiSpotsColor</b></td><td>Color of the spots</td></tr>
 <tr><td><b>apiSelectedSpotColor</b></td><td>Color of the selected spot</td></tr>
@@ -86,8 +88,6 @@ List of attributes with description:
 <tr><td><b>apiIntervalMeasure</b></td><td>How spots are distributed on the circumference: constant angle or constant arc length</td></tr>
 <tr><td><b>apiInvertDirection</b></td><td>If spots will be selected in inverted direction</td></tr>
 <tr><td><b>apiAnimationType</b></td><td>See below to detailed explanation of animation types</td></tr>
-<tr><th colspan="2">Arc appearance</th></tr>
-<tr><td><b>apiArcOrientation</b></td><td>Orientation of the "belly" of the arc. This parameter also affects if the arc will be 90° (corner arc) or 180° (edge arc)</td></tr>
 <tr><th colspan="2">Hand appearance</th></tr>
 <tr><td><b>apiHandEnabled</b></td><td>If hand is drawn</td></tr>
 <tr><td><b>apiHandColor</b></td><td>Hand's color</td></tr>
