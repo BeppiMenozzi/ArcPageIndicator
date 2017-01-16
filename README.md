@@ -77,10 +77,22 @@ List of attributes with description:
 <table>
 <tr><th colspan="2">General</th></tr>
 <tr><td><b>apiViewPager</b></td><td>The ViewPager associated to the Indicator</td></tr>
-<tr><td><b>kDefaultState</b></td><td>The starting state of the knob.</td></tr>
-<tr><td><b>kAnimation</b></td><td>Enable / disable indicator's animation.</td></tr>
-<tr><td><b>kAnimationSpeed</b></td><td>Parameter "speed" applied to the spring physical model for the indicator's animation.</td></tr>
-<tr><td><b>kAnimationBounciness</b></td><td>Parameter "bounciness" applied to the spring physical model for the indicator's animation.</td></tr>
-<tr><td><b>kEnabled</b></td><td>Enable / disable knob.</td></tr>
-<tr><th colspan="2">Knob appearance</th></tr>
+<tr><th colspan="2">Spot appearance</th></tr>
+<tr><td><b>apiSpotsColor</b></td><td>Color of the spots</td></tr>
+<tr><td><b>apiSelectedSpotColor</b></td><td>Color of the selected spot</td></tr>
+<tr><td><b>apiSpotsRadius</b></td><td>Size of the spots</td></tr>
+<tr><td><b>apiSpotsShape</b></td><td>Shape of the spots: Circle, RoundedSquare or Square</td></tr>
+<tr><th colspan="2">Spots distribution and movement</th></tr>
+<tr><td><b>apiIntervalMeasure</b></td><td>How spots are distributed on the circumference: constant angle or constant arc length</td></tr>
+<tr><td><b>apiInvertDirection</b></td><td>If spots will be selected in inverted direction</td></tr>
+<tr><td><b>apiAnimationType</b></td><td>See below to detailed explanation of animation types</td></tr>
+<tr><th colspan="2">Arc appearance</th></tr>
+<tr><td><b>apiArcOrientation</b></td><td>Orientation of the "belly" of the arc. This parameter also affects if the arc will be 90° (corner arc) or 180° (edge arc)</td></tr>
+<tr><th colspan="2">Hand appearance</th></tr>
+<tr><td><b>apiHandEnabled</b></td><td>If hand is drawn</td></tr>
+<tr><td><b>apiHandColor</b></td><td>Hand's color</td></tr>
+<tr><td><b>apiHandWidth</b></td><td>Hand's width</td></tr>
+<tr><td><b>apiHandRelativeLength</b></td><td>Hand's relative length starting from center to edges (1 = full length)</td></tr>
+
+
 </table>
