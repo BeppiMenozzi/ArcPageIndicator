@@ -3,7 +3,7 @@ A fully customizable super-easy Page Indicator, with stunning animations and ori
 <br>
 Bored of the usual small points or little labels? Try this elevator-like elegant and original page indicator!
 
-<img src="gifs/page.gif" height="240">
+<img src="gifs/page.gif" height="360">
 <br>
 
 
