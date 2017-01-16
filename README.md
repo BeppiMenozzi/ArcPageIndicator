@@ -86,11 +86,11 @@ List of attributes with description:
 ### Animation types
 List of animation types:
 <table>
-<tr><td><b>Color</b></td><td><img src="gifs/c01"></td><td><img src="gifs/e01"></td></tr>
-<tr><td><b>Slide</b></td><td><img src="gifs/c02"></td><td><img src="gifs/e02"></td></tr>
-<tr><td><b>Pinch</b></td><td><img src="gifs/c03"></td><td><img src="gifs/e03"></td></tr>
-<tr><td><b>Bump</b></td><td><img src="gifs/c04"></td><td><img src="gifs/e04"></td></tr>
-<tr><td><b>Rotate</b></td><td><img src="gifs/c05"></td><td><img src="gifs/e05"></td></tr>
-<tr><td><b>Rotate Pinch</b></td><td><img src="gifs/c06"></td><td><img src="gifs/e06"></td></tr>
-<tr><td><b>Necklace</b></td><td><img src="gifs/c07"></td><td><img src="gifs/e07"></td></tr>
+<tr><td><b>Color</b></td><td><img src="gifs/c01.gif"></td><td><img src="gifs/e01.gif"></td></tr>
+<tr><td><b>Slide</b></td><td><img src="gifs/c02.gif"></td><td><img src="gifs/e02.gif"></td></tr>
+<tr><td><b>Pinch</b></td><td><img src="gifs/c03.gif"></td><td><img src="gifs/e03.gif"></td></tr>
+<tr><td><b>Bump</b></td><td><img src="gifs/c04.gif"></td><td><img src="gifs/e04.gif"></td></tr>
+<tr><td><b>Rotate</b></td><td><img src="gifs/c05.gif"></td><td><img src="gifs/e05.gif"></td></tr>
+<tr><td><b>Rotate Pinch</b></td><td><img src="gifs/c06.gif"></td><td><img src="gifs/e06.gif"></td></tr>
+<tr><td><b>Necklace</b></td><td><img src="gifs/c07.gif"></td><td><img src="gifs/e07.gif"></td></tr>
 </table>
