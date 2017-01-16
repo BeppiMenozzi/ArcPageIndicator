@@ -1,5 +1,7 @@
 # ArcPageIndicator
 A fully customizable super-easy Page Indicator, with stunning animations and original graphics, for Android. Needs a very small screen, perfect when many pages need to be shown and reached in a small time.
+<br>
+Bored of the usual small points or little labels? Try this elevator-like elegant and original page indicator!
 
 <img src="gifs/c12.gif" height="180">
 <img src="gifs/e04.gif" height="180">
