@@ -110,11 +110,11 @@ List of animation types:
 <a href="http://math.stackexchange.com/questions/2093569/points-on-an-ellipse">This question I made</a> helped me solve the
 ellipse's problem. Indeed, finding arcs of constant length on a known ellipse is a problem with a non-finite solution, that needs integrals to be calculated. There were at least 5 approaches to solve this problem with acceptable performance:
 
-* find the points recursively, by iteratively reducing the error until it's close enough to zero
-* create a big table of sampled data and storing them to provide a database of pre-calculated solutions
-* distribute the points on the radius and project them on the circumference
-* use an approximated function
-* calculate the elliptic integrals
+* find the points recursively, by iteratively reducing the error until it's close enough to zero. Pros: easy to do. Cons: adds a indetermined (although very small) time to the drawing process
+* create a big table of sampled data and storing them to provide a database of pre-calculated solutions. Pros: fastest. Cons: can't work for *any* number of elements
+* distribute the points on the radius and project them on the circumference. Pros: very fast. Cons: error still pretty large
+* use an approximated function. Pros: fast and good enough. Cons: never perfect
+* calculate the elliptic integrals. Pros: perfect. Cons: very very very heavy on performance
 
 I chose to find a good approximated function and that is what you can find inside the code, it's fast enough and the error is near to invisibility. In case you need more performance, you can remove the e6 part of the formula and have a slightly bigger error.
 
