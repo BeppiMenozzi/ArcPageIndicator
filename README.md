@@ -108,9 +108,9 @@ List of animation types:
 
 ### Some maths
 <a href="http://math.stackexchange.com/questions/2093569/points-on-an-ellipse">This question I made</a> helped me solve the
-ellipse's problem. Indeed, finding arcs of constant length on a known ellipse is a problem with a non-finite solution, that needs integrals to be calculated. There were at least 5 approaches to solve this problem:
+ellipse's problem. Indeed, finding arcs of constant length on a known ellipse is a problem with a non-finite solution, that needs integrals to be calculated. There were at least 5 approaches to solve this problem with acceptable performance:
 
-* find the points recursively, by interatively reducing the error until it's close enough to zero
+* find the points recursively, by iteratively reducing the error until it's close enough to zero
 * create a big table of sampled data and storing them to provide a database of pre-calculated solutions
 * distribute the points on the radius and project them on the circumference
 * use an approximated function
