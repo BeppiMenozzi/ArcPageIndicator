@@ -76,7 +76,7 @@ List of attributes with description:
 <tr><td><b>apiSpotsRadius</b></td><td>Size of the spots</td></tr>
 <tr><td><b>apiSpotsShape</b></td><td>Shape of the spots: Circle, RoundedSquare or Square</td></tr>
 <tr><th colspan="2">Spots distribution and movement</th></tr>
-<tr><td><b>apiIntervalMeasure</b></td><td>How spots are distributed on the circumference: constant angle or constant arc length</td></tr>
+<tr><td><b>apiIntervalMeasure</b></td><td>How spots are distributed on the circumference: constant angle or constant arc length. With constant angle, the spots will not be distributed evenly, because of ellipse's eccentricity. Normally constant arc length is used: being a non-finite math problem, here an approximation function is used, as explained later on.</td></tr>
 <tr><td><b>apiInvertDirection</b></td><td>If spots will be selected in inverted direction</td></tr>
 <tr><td><b>apiAnimationType</b></td><td>See below to detailed explanation of animation types</td></tr>
 <tr><th colspan="2">Hand appearance</th></tr>
@@ -105,6 +105,18 @@ List of animation types:
 <tr><td><b>Example of hand</b></td><td><img src="gifs/c13.gif" height="120"></td><td><img src="gifs/e13.gif" height="90"></td></tr>
 <tr><td><b>Example of rounded squared spots</b></td><td><img src="gifs/c14.gif" height="120"></td><td><img src="gifs/e14.gif" height="90"></td></tr>
 </table>
+
+### Some maths
+<a href="http://math.stackexchange.com/questions/2093569/points-on-an-ellipse">This question I made</a> helped me solve the
+ellipse's problem. Indeed, finding arcs of constant length on a known ellipse is a problem with a non-finite solution, that needs integrals to be calculated. There were at least 5 approaches to solve this problem:
+
+* find the points recursively, by interatively reducing the error until it's close enough to zero
+* create a big table of sampled data and storing them to provide a database of pre-calculated solutions
+* distribute the points on the radius and project them on the circumference
+* use an approximated function
+* calculate the elliptic integrals
+
+I chose to find a good approximated function and that is what you can find inside the code, it's fast enough and the error is near to invisibility. In case you need more performance, you can remove the e6 part of the formula and have a slightly bigger error.
 
 Author
 -------
