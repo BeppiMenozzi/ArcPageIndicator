@@ -118,9 +118,14 @@ ellipse's problem. Indeed, finding arcs of constant length on a known ellipse is
 
 I chose to find a good approximated function and that is what you can find inside the code, it's fast enough and the error is near to invisibility. In case you need more performance, you can remove the e6 part of the formula and have a slightly bigger error.
 
+The formula used is the one of the referenced question, and thanks very much to its author, <a href="http://math.stackexchange.com/users/299599/ng-chung-tak">Ng Chung Tak</a> that is not the author of the answer, but also the author of the formula itself.
+
+
 Author
 -------
 * Beppi Menozzi
+* <a href="http://math.stackexchange.com/users/299599/ng-chung-tak">Ng Chung Tak</a> formula's author
+
 
 License
 -------
