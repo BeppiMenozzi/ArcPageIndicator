@@ -13,6 +13,9 @@ A fully customizable super-easy Page Indicator, with stunning animations and ver
 * Can be programmatically controlled
 * Includes rather complex ellipses calculations :-)
 
+<img src="gifs/elevator.jpg" height="170"><br>
+An old elevator that inspired this project.
+
 ### Setup (Gradle)
 In your project's build.gradle file:
 
