@@ -201,15 +201,18 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
             View view = activity.findViewById(viewPagerRes);  // FALLISCE
 
             if (view != null && view instanceof ViewPager) {
-                releaseViewPager();
-                viewPager = (ViewPager) view;
-                viewPager.addOnPageChangeListener(this);
-                pagerAdapter = viewPager.getAdapter();
-                currentPosition = viewPager.getCurrentItem();
+                configureViewPager((ViewPager) view);
             }
         }
     }
+    void configureViewPager(ViewPager viewPager) {
+        releaseViewPager();
+        this.viewPager = viewPager;
+        viewPager.addOnPageChangeListener(this);
+        pagerAdapter = viewPager.getAdapter();
+        currentPosition = viewPager.getCurrentItem();
 
+    }
 
     public void releaseViewPager() {
         if (viewPager != null) {
@@ -753,7 +756,7 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
     }
 
     public void setViewPager(ViewPager viewPager) {   // useful when the view pager is created dynamically and there is no res
-        this.viewPager = viewPager;
+        configureViewPager(viewPager);
         invalidate();
     }
 
