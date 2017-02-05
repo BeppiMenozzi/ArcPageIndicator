@@ -22,11 +22,11 @@ import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.bump;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.color;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.cover;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.fill;
+import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.necklace;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.necklace2;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.none;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.pinch;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.rotate;
-import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.necklace;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.rotate_pinch;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.slide;
 import static it.beppi.arcpageindicator.ArcPageIndicator.AnimationType.surround;
@@ -192,6 +192,7 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
      * Look for the View Pager
      */
     void findViewPager() {
+        if (viewPager != null) return;
         if (viewPagerRes == 0) return;
 
         Context ctx = getContext();
@@ -209,6 +210,7 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
         }
     }
 
+
     public void releaseViewPager() {
         if (viewPager != null) {
             viewPager.removeOnPageChangeListener(this);
@@ -218,7 +220,7 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
 
     private Paint paint;
     private Context ctx;
-    PagerAdapter pagerAdapter;
+    PagerAdapter pagerAdapter = null;
 
     /**
      * Initialize what can be initialized at the beginning
@@ -259,7 +261,7 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
 
-        if (viewPager == null) findViewPager();
+        findViewPager();
 
         calcDirection();
         calcRadiusAndCenter();
@@ -291,6 +293,11 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
     public void onPageScrollStateChanged(int state) {
     }
 
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        findViewPager();
+    }
 
     //**** Colors, shapes and animations ***
 
@@ -669,10 +676,13 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
         else if (arcOrientation == toDownRight) { rotationConstant2 = Math.PI; arcRate = 4; }
         else if (arcOrientation == toDownLeft) { rotationConstant2 = 3*Math.PI/2; arcRate = 4; }
 
-        pages = pagerAdapter.getCount();
-        if (pages > 1)
-            itemAngle = Math.PI * 2 / ((pages-1) * arcRate);
-        else itemAngle = 0;
+        if (pagerAdapter != null) {
+            pages = pagerAdapter.getCount();
+            if (pages > 1)
+                itemAngle = Math.PI * 2 / ((pages - 1) * arcRate);
+            else itemAngle = 0;
+        }
+        else pages = 3;
 
     }
 
@@ -739,6 +749,11 @@ public class ArcPageIndicator extends View implements ViewPager.OnPageChangeList
 
     public void setViewPagerRes(int viewPagerRes) {
         this.viewPagerRes = viewPagerRes;
+        invalidate();
+    }
+
+    public void setViewPager(ViewPager viewPager) {   // useful when the view pager is created dynamically and there is no res
+        this.viewPager = viewPager;
         invalidate();
     }
 

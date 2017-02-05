@@ -22,7 +22,7 @@ public class SampleActivity extends AppCompatActivity {
         viewPager.setAdapter(new CustomPagerAdapter(findViewById(R.id.activity_sample)));
         viewPager.setOffscreenPageLimit(12);
 
-        automaticDemo();
+//        automaticDemo();
     }
 
 

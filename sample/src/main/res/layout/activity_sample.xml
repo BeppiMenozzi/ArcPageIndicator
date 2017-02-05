@@ -149,7 +149,7 @@
         app:apiViewPager="@id/view_pager"
         app:apiArcOrientation="toUp"
         app:apiSpotsRadius="12dp"
-        app:apiAnimationType="necklace"
+        app:apiAnimationType="bump"
         />
 
     <it.beppi.arcpageindicator.ArcPageIndicator
@@ -174,7 +174,7 @@
         android:layout_centerVertical="true"
         app:apiViewPager="@id/view_pager"
         app:apiArcOrientation="toRight"
-        app:apiAnimationType="bump"
+        app:apiAnimationType="slide"
         app:apiSpotShape="roundedSquare"
         />
 
@@ -195,7 +195,7 @@
         android:layout_centerVertical="true"
         app:apiViewPager="@id/view_pager"
         app:apiArcOrientation="toLeft"
-        app:apiAnimationType="rotate_pinch"
+        app:apiAnimationType="fill"
         />
 
     <it.beppi.arcpageindicator.ArcPageIndicator
@@ -219,6 +219,7 @@
         app:apiViewPager="@id/view_pager"
         app:apiArcOrientation="toUpLeft"
         app:apiSpotsRadius="2dp"
+        app:apiAnimationType="necklace2"
         />
 
     <it.beppi.arcpageindicator.ArcPageIndicator
@@ -230,6 +231,6 @@
         app:apiArcOrientation="toDownLeft"
         app:apiHandEnabled="true"
         app:apiSpotsRadius="2dp"
+        app:apiAnimationType="slide"
         />
-
 </RelativeLayout>
