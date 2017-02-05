@@ -31,7 +31,7 @@ In your Application's or Module's build.gradle file:
 
     dependencies {
         ...
-        compile 'com.github.BeppiMenozzi:ArcPageIndicator:1.0.0'
+        compile 'com.github.BeppiMenozzi:ArcPageIndicator:1.0.2'
         ...
     }
     
@@ -108,6 +108,10 @@ List of animation types:
 <tr><td><b>Example of hand</b></td><td><img src="gifs/c13.gif" height="120"></td><td><img src="gifs/e13.gif" height="90"></td></tr>
 <tr><td><b>Example of rounded squared spots</b></td><td><img src="gifs/c14.gif" height="120"></td><td><img src="gifs/e14.gif" height="90"></td></tr>
 </table>
+
+### New in 1.0.2
+* Fixed a crash when the ViewPager was not found
+* Added setViewPager() that allows to add the Indicator also to dynamically created viewpagers
 
 ### Some maths
 <a href="http://math.stackexchange.com/questions/2093569/points-on-an-ellipse">This question I made</a> helped me solve the
