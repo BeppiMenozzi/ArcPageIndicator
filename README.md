@@ -111,7 +111,7 @@ List of animation types:
 
 ### New in 1.0.2
 * Fixed a crash when the ViewPager was not found
-* Added setViewPager() that allows to add the Indicator also to dynamically created viewpagers
+* Added setViewPager(), to attach the Indicator to dynamically created viewpagers, by referring the Object and not the id reference number
 
 ### Some maths
 <a href="http://math.stackexchange.com/questions/2093569/points-on-an-ellipse">This question I made</a> helped me solve the
