@@ -92,7 +92,7 @@ List of attributes with description:
 ### Animation types
 List of animation types:
 <table>
-<tr><th><b>Name</b></th><th>toBottomRight</th><th>toUp</th><th>Notes</th></tr>
+<b><tr><th>Name</th><th>toBottomRight</th><th>toUp</th><th>Notes</th></tr></b>
 <tr><td><b>Color</b></td><td><img src="gifs/c01.gif" height="120"></td><td><img src="gifs/e01.gif" height="90"></td></tr>
 <tr><td><b>Slide</b></td><td><img src="gifs/c02.gif" height="120"></td><td><img src="gifs/e02.gif" height="90"></td></tr>
 <tr><td><b>Pinch</b></td><td><img src="gifs/c03.gif" height="120"></td><td><img src="gifs/e03.gif" height="90"></td></tr>
