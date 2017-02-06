@@ -93,7 +93,7 @@ List of attributes with description:
 List of animation types:
 <table>
 <tr><th>Name</th><th>toBottomRight</th><th>toUp</th><th>Notes</th></tr>
-<tr><td><b>Color</b></td><td><img src="gifs/c01.gif" height="120"></td><td><img src="gifs/e01.gif" height="90"></td><td>######Color cross-fade</td></tr>
+<tr><td><b>Color</b></td><td><img src="gifs/c01.gif" height="120"></td><td><img src="gifs/e01.gif" height="90"></td><td>###### Color cross-fade</td></tr>
 <tr><td><b>Slide</b></td><td><img src="gifs/c02.gif" height="120"></td><td><img src="gifs/e02.gif" height="90"></td><td>Simple movement</td></tr>
 <tr><td><b>Pinch</b></td><td><img src="gifs/c03.gif" height="120"></td><td><img src="gifs/e03.gif" height="90"></td><td>Movement with size reduction</td></tr>
 <tr><td><b>Bump</b></td><td><img src="gifs/c04.gif" height="120"></td><td><img src="gifs/e04.gif" height="90"></td><td>Movement with size growth.<br><i>Might need additional padding</i></td></tr>
