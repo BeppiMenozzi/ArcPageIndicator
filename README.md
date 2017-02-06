@@ -96,13 +96,13 @@ List of animation types:
 <tr><td><b>Slide</b></td><td><img src="gifs/c02.gif" height="120"></td><td><img src="gifs/e02.gif" height="90"></td></tr>
 <tr><td><b>Pinch</b></td><td><img src="gifs/c03.gif" height="120"></td><td><img src="gifs/e03.gif" height="90"></td></tr>
 <tr><td><b>Bump</b></td><td><img src="gifs/c04.gif" height="120"></td><td><img src="gifs/e04.gif" height="90"></td></tr>
-<tr><td><b>Rotate</b></td><td><img src="gifs/c05.gif" height="120"></td><td><img src="gifs/e05.gif" height="90"></td></tr>
-<tr><td><b>Rotate Pinch</b></td><td><img src="gifs/c06.gif" height="120"></td><td><img src="gifs/e06.gif" height="90"></td></tr>
+<tr><td><b>Rotate</b></td><td><img src="gifs/c05.gif" height="120"></td><td><img src="gifs/e05.gif" height="90"></td><td>Inverted rotation direction</td></tr>
+<tr><td><b>Rotate Pinch</b></td><td><img src="gifs/c06.gif" height="120"></td><td><img src="gifs/e06.gif" height="90"></td><td>Inverted rotation direction</td></tr>
 <tr><td><b>Cover</b></td><td><img src="gifs/c07.gif" height="120"></td><td><img src="gifs/e07.gif" height="90"></td></tr>
 <tr><td><b>Fill</b></td><td><img src="gifs/c08.gif" height="120"></td><td><img src="gifs/e08.gif" height="90"></td></tr>
 <tr><td><b>Surround</b></td><td><img src="gifs/c10.gif" height="120"></td><td><img src="gifs/e10.gif" height="90"></td></tr>
-<tr><td><b>Necklace</b></td><td><img src="gifs/c11.gif" height="120"></td><td><img src="gifs/e11.gif" height="90"></td></tr>
-<tr><td><b>Necklace 2</b></td><td><img src="gifs/c12.gif" height="120"></td><td><img src="gifs/e12.gif" height="90"></td></tr>
+<tr><td><b>Necklace</b></td><td><img src="gifs/c11.gif" height="120"></td><td><img src="gifs/e11.gif" height="90"></td><td>Inverted rotation direction</td></tr>
+<tr><td><b>Necklace 2</b></td><td><img src="gifs/c12.gif" height="120"></td><td><img src="gifs/e12.gif" height="90"></td><td>Inverted rotation direction</td></tr>
 </table>
 <table>
 <tr><td><b>Example of hand</b></td><td><img src="gifs/c13.gif" height="120"></td><td><img src="gifs/e13.gif" height="90"></td></tr>
